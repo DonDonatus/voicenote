@@ -4,6 +4,19 @@
 
 An intelligent, voice-first Progressive Web App (PWA) that converts spoken plans into actionable, scheduled checklists with push notification reminders.
 
+## Start Here
+
+The first deliverable is a responsive landing page with a practical MVP starter checklist. Open `index.html` directly in a browser to preview it; the checklist is a visual planning aid, and its checkbox state is not saved. This static page does not record audio or send reminders.
+
+Build the first useful slice in this order:
+
+- [ ] Create the installable PWA shell and explain Home Screen installation, especially for iPhone push support.
+- [ ] Capture one spoken note and show its transcript for correction.
+- [ ] Parse titles, due times, priorities, and subtasks; leave ambiguous times unset.
+- [ ] Let the user review and confirm the draft before saving it.
+- [ ] Store due times in UTC with the user’s timezone and schedule reminders server-side.
+- [ ] Deliver and verify a test push on Android and an iPhone with the PWA installed.
+
 ---
 
 ## 📌 Executive Summary
