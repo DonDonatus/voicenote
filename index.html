@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta
+      name="description"
+      content="Turn the plans in your head into a clear checklist, with reminders when you need them."
+    >
+    <title>VoiceNote — Make room for what matters</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="VoiceNote home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>voicenote</span>
+      </a>
+      <a class="header-link" href="#starter-checklist">The starter plan <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A calmer way to plan your day</p>
+          <h1 id="hero-title">Your day,<br>spoken into <span>shape.</span></h1>
+          <p class="hero-description">
+            Say what’s on your mind. Get a clear, editable checklist — and a nudge
+            when it matters.
+          </p>
+          <a class="primary-button" href="#starter-checklist">
+            See where we start <span aria-hidden="true">↓</span>
+          </a>
+          <p class="hero-note">A small first step toward a more thoughtful to-do list.</p>
+        </div>
+
+        <div class="preview-wrap" aria-label="Preview of a voice note becoming a checklist">
+          <div class="preview-spark spark-one" aria-hidden="true">✳</div>
+          <div class="preview-spark spark-two" aria-hidden="true">✳</div>
+          <article class="preview-card">
+            <div class="preview-topline">
+              <span class="preview-label">A little preview</span>
+              <span class="preview-date">TOMORROW'S PLAN</span>
+            </div>
+            <div class="voice-note">
+              <span class="voice-icon" aria-hidden="true">“</span>
+              <p>Tomorrow, call Maya at ten and send the project notes before lunch.</p>
+              <span class="voice-caption">YOUR VOICE NOTE</span>
+            </div>
+            <div class="preview-divider"><span>TURNED INTO</span></div>
+            <ul class="sample-tasks" aria-label="Example checklist">
+              <li>
+                <span class="task-check" aria-hidden="true"></span>
+                <span class="task-copy"><strong>Call Maya</strong><small>Tomorrow · 10:00 AM</small></span>
+                <span class="task-priority">HIGH</span>
+              </li>
+              <li>
+                <span class="task-check" aria-hidden="true"></span>
+                <span class="task-copy"><strong>Send project notes</strong><small>Tomorrow · Before noon</small></span>
+              </li>
+            </ul>
+            <div class="review-note"><span aria-hidden="true">✳</span> You review everything before it’s saved.</div>
+          </article>
+          <span class="preview-caption">A clearer head starts with one thought.</span>
+        </div>
+      </section>
+
+      <section class="starter-section" id="starter-checklist" aria-labelledby="checklist-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="section-number">01</span> THE FIRST MILE</p>
+            <h2 id="checklist-title">A good idea, made <span>buildable.</span></h2>
+          </div>
+          <p class="section-intro">
+            Start with the smallest end-to-end experience: install the app, speak a
+            plan, check the draft, and receive one reliable reminder.
+          </p>
+        </div>
+
+        <div class="checklist-layout">
+          <div class="checklist">
+            <article class="checklist-item">
+              <label class="item-check">
+                <input type="checkbox">
+                <span class="custom-check" aria-hidden="true"></span>
+                <span class="item-content">
+                  <span class="item-kicker">01 / FOUNDATION</span>
+                  <strong>Give it a home on your phone</strong>
+                  <span>Build the responsive PWA shell and add its manifest. Include a short “Add to Home Screen” guide for iPhone users.</span>
+                </span>
+              </label>
+            </article>
+            <article class="checklist-item">
+              <label class="item-check">
+                <input type="checkbox">
+                <span class="custom-check" aria-hidden="true"></span>
+                <span class="item-content">
+                  <span class="item-kicker">02 / CAPTURE</span>
+                  <strong>Turn one spoken note into text</strong>
+                  <span>Add one-tap recording and show the transcript right away, so people can catch mistakes.</span>
+                </span>
+              </label>
+            </article>
+            <article class="checklist-item">
+              <label class="item-check">
+                <input type="checkbox">
+                <span class="custom-check" aria-hidden="true"></span>
+                <span class="item-content">
+                  <span class="item-kicker">03 / ORGANIZE</span>
+                  <strong>Shape the transcript into tasks</strong>
+                  <span>Extract a title, due time, priority, and subtasks. Leave vague times unset instead of guessing.</span>
+                </span>
+              </label>
+            </article>
+            <article class="checklist-item">
+              <label class="item-check">
+                <input type="checkbox">
+                <span class="custom-check" aria-hidden="true"></span>
+                <span class="item-content">
+                  <span class="item-kicker">04 / CONFIRM</span>
+                  <strong>Let people review before saving</strong>
+                  <span>Make every draft editable and ask for confirmation before tasks or reminders are created.</span>
+                </span>
+              </label>
+            </article>
+            <article class="checklist-item">
+              <label class="item-check">
+                <input type="checkbox">
+                <span class="custom-check" aria-hidden="true"></span>
+                <span class="item-content">
+                  <span class="item-kicker">05 / REMIND</span>
+                  <strong>Prove one reminder arrives on time</strong>
+                  <span>Store due times in UTC with the user’s timezone, schedule pushes on the server, and test Android plus an installed iPhone PWA.</span>
+                </span>
+              </label>
+            </article>
+          </div>
+
+          <aside class="first-slice">
+            <span class="aside-icon" aria-hidden="true">↗</span>
+            <p class="aside-label">THE FIRST MILESTONE</p>
+            <h3>One note.<br>One checked task.<br>One timely nudge.</h3>
+            <p>That’s the thin slice worth building first. The rest can grow from there.</p>
+            <div class="aside-rule"></div>
+            <p class="aside-footnote"><span aria-hidden="true">◷</span> Reminder times are scheduled on the server — not by a browser timer.</p>
+          </aside>
+        </div>
+        <p class="checklist-note">Starter checklist · Checkboxes are for planning and aren’t saved yet.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#" aria-label="VoiceNote home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>voicenote</span>
+      </a>
+      <span>A little less to remember.</span>
+      <a href="#hero-title">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
